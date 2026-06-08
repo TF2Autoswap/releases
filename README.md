@@ -1,4 +1,4 @@
-# TF2autoswap
+# TF2autoswap Version 4.5
 
 Swap any Team Fortress 2 cosmetic or weapon model for another, on your own computer only.
 
@@ -33,7 +33,18 @@ Keep all three files in the same folder:
 | `tf2_core.py` | Yes | Core logic — do not delete |
 | `tf2_schema.py` | Optional | Friendly item names and warnings |
 
-Built mods and a log file (`tf2autoswap.log`) are saved to `~/tf2_swaps/`.
+Built mods and a log file (`tf2autoswap.log`) are saved inside the tool folder itself:
+
+```
+tf2autoswap/
+  tf2autoswap.py
+  tf2_core.py
+  tf2_schema.py
+  output/           ← built VPKs saved here
+  tf2autoswap.log   ← errors and build history
+```
+
+This keeps everything self-contained. To move or share the tool, zip the whole folder.
 
 ---
 
@@ -89,9 +100,11 @@ The tool shows a warning at the confirm step if a swap may cause a visual proble
 | Warning type | What it means |
 |---|---|
 | Head clip warning | The replacement model hides the head, but the target slot does not. The default head will show through. |
+| Equip region mismatch | The two items cover different areas of the player model. The swap may clip with other equipped items. |
 | Slot mismatch warning | The two weapons are from different loadout slots. This may cause animation problems in-game. |
+| Preloader write warning | Shown before writing directly to the preloader folder. Requires typing `yes` to confirm. Saving a VPK and importing manually is the safer option. |
 
-You can still proceed past a warning. It is your choice.
+You can still proceed past most warnings. It is your choice.
 
 ---
 
@@ -147,7 +160,7 @@ When you save a mod, you choose the destination. The format is chosen automatica
 | Output folder or custom path | A single `.vpk` file — good for sharing or manual import |
 | Preloader addons folder | A folder with extracted files and a `mod.json` — ready to enable in the preloader with no extra steps |
 
-Output files are saved to `~/tf2_swaps/` by default, with this name format:
+Output files are saved to the `output/` folder inside the tool folder, with this name format:
 
 ```
 <Target> replacement mod (<Source>)_TF2autoswap.vpk
