@@ -36,7 +36,7 @@ Full documentation is included with each release.
 
 ## License
 
-**CC BY-NC 4.0** — Free to use and modify with credit. Resale is not permitted.
+**GNU GENERAL PUBLIC LICENSE** — Free to use and modify with credit.
 
 ---
 
