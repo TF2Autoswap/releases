@@ -6,7 +6,7 @@ Only the latest release of TF2autoswap receives security updates.
 
 | Version | Supported |
 |---|---|
-| 4.6 (latest) | ✅ |
+| 4.7 (latest) | ✅ |
 | < 4.6 | ❌ |
 
 ## Reporting a Vulnerability
