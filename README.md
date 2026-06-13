@@ -1,5 +1,8 @@
 # TF2autoswap
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9791a194-65b5-40e0-aafc-62aa37204772/deploy-status)](https://app.netlify.com/sites/tf2autoswap/deploys)
+
+
 A Python tool for swapping Team Fortress 2 cosmetic and weapon models client-side.
 
 Changes are visible only to you. No game files are permanently modified.
