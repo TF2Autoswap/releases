@@ -44,3 +44,5 @@ Full documentation is included with each release.
 
 - Tool by **Sky (TF2Autoswap)** with coding assistance from Claude (Anthropic)
 - Casual Preloader by **cukei** — [gamebanana.com/tools/19049](https://gamebanana.com/tools/19049)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9791a194-65b5-40e0-aafc-62aa37204772/deploy-status)](https://app.netlify.com/projects/tf2autoswap/deploys)
